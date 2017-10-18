@@ -1,0 +1,26 @@
+2017.9.5 Tuesday
+
+Conda
+- Linux system : Dependency 에 매우 민감
+ 	- python, tensorflow versions. etc...
+
+python36
+
+cd Downloads
+source .bashrc
+sudo -s
+conda update conda
+y
+exit
+source activate py36
+python3
+ctrl D
+sudo -s
+source activate py36
+conda install python=3.6
+y
+
+
+scipy18
+
+scipy

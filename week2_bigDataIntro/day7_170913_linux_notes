@@ -1,0 +1,80 @@
+:~/test$
+	mkdir test
+	cd test/
+	sudo apt-get install vim
+	vim test.txt
+		>>> :wq
+	ls
+	>>> you will see test.txt
+	vim test.txt
+  	ls
+	cp test.txt test2.txt  #copy
+  	ls
+	rm test2.txt          #remove
+	mv test.txt test3.txt #name change from test to test3
+	mv test3.txt ..  #dir change
+	mv test3.txt test/  #dir change
+
+	tar -cvzf test.tar.gz test
+	tar -xvzf test.tar.gz
+	rmdir test
+	rm -r test/  #delete forever
+	ls -al 
+	>>>	user group size date time filename - index heads
+	>>>	drwxrwxr-x: directory
+	>>>	-rw-rw-r : non directory type	
+		>>>  user, group 에게는 읽고쓸 권한있음, 다른 유저는 only read 
+	>>>	drwxr-xr-x : authorization 권한 
+		>>> 	rwx: 권한. 
+		ip.sh 다운받고 바로 ip.sh실행되지 않음 - 윈도우 path 설정개념처럼
+		어디에있는지 알려줘야함. 
+		./ip.sh라고 쳐야함. 현 폴더에있다고 명시. 
+		
+	chmod +x ip.sh    #change permission mode: allow access
+
+
+	((deleted PATH anaconda via vim .bashrc
+
+
+
+
+
+jupyter
+argmin
+argmax
+np.sum / mean ...
+
+toy data graph example
+y= 2x - 2 
+y = ax +b
+want to estimate a, b values (true a = 2, true b = -2)
+noise
+hyper-parameter setting
+- define the num of freq of training
+- learning rate: gradient descent - how many steps when doing that:: important parameter
+	
+[model definition]
+input = x
+target = y
+
+[x,1]row vector (horizontally)
+[a,b] column vector (vertically)
+multiply => ax + b, which is y 
+first initialize with random num, and revise bit by bit
+how revise?
+
+y_hat: estimated
+target = real value, real target
+loss that we want to minimize
+tf.train.GradientDescentOptimizer == all already defined in tensorflow
+
+
+
+
+
+
+
+
+
+	
+	

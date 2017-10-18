@@ -1,0 +1,29 @@
+결측값의 보정 imputing
+NaN 이 아닌 값으로 채운다
+- 보통 일단 빈 값이 있는 것을 지우는 작업을 주로 함.
+
+scikit-learn estimator API
+Categorical data 
+- ordinal feature - xl, l, m
+- categorical - nominal feature, color: red, green, blue ...
+- ordinal to number (순위형 피쳐)
+- 범주형 피처를 원핫 인코딩으로 바꾸면 [있,없,있] 죽었다/살았다, 샀다/안샀다 이렇게 해석 가능::  red -> [1 0 0], blue -> [0,1,0], 등
+
+
+Standardization
+numpy, pandas. 
+
+타이타닉 데이터를 가지고 와서 전처리
+클래스 레이블이 아닌 죽/살의 피쳐
+name = text 
+sex = text
+text를 어떻게 쓸것인지. 성별을 1,0으로 만들수있음. 
+cabin - missing value.
+embarked - categorical - change to - one hot encoding
+
+regression...
+k-fold cross-validation...
+
+keras
+tensorflow
+
